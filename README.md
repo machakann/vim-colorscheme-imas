@@ -1,10 +1,13 @@
 vim-colorscheme-imas
 ====================
 
-Vimmerなプロデューサーさん！colorschemですよ、colorscheme！
-![colorscheme-imas](http://art5.photozou.jp/pub/986/3080986/photo/203773628_org.v1400260133.png)
+Vimmerさん！colorschemですよ、colorscheme！
+## :set background=light
+![background=light](http://art49.photozou.jp/pub/986/3080986/photo/219813925.v1426344002.png)
+
+## :set background=dark
+![background=dark](http://art41.photozou.jp/pub/986/3080986/photo/219813937.v1426344002.png)
 
 * とりあえず目は死ぬ
 * 愛をもってしても Normal に春香色を設定は無理があった
 
-gvimのみ対応

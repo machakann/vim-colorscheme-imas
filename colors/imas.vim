@@ -10,63 +10,200 @@ if exists("syntax_on")
 endif
 let g:colors_name = "imas"
 
-"*** highlight groups (:h highlight-groups) ***"
-highlight Conceal           guifg=#aececb   guibg=#727272   gui=NONE
-highlight Cursor            guifg=#ffffff   guibg=#000000   gui=NONE
-highlight CursorIM          guifg=#ffffff   guibg=#f29047   gui=NONE
-highlight CursorLine        guifg=NONE      guibg=#e2ffb9   gui=NONE
-highlight Directory         guifg=#b51d66   guibg=NONE      gui=NONE
-highlight DiffAdd           guifg=NONE      guibg=#cdffcd   gui=NONE
-highlight DiffChange        guifg=NONE      guibg=#ffedcd   gui=NONE
-highlight DiffDelete        guifg=NONE      guibg=#ffcdcd   gui=NONE
-highlight DiffText          guifg=NONE      guibg=#e6e6e6   gui=NONE
-highlight ErrorMsg          guifg=#ff0000   guibg=NONE      gui=NONE
-highlight Folded            guifg=#dddddd   guibg=#254cf7   gui=NONE
-highlight FoldColumn        guifg=#dddddd   guibg=#254cf7   gui=NONE
-highlight IncSearch         guifg=NONE      guibg=#90fc96   gui=NONE
-highlight LineNr            guifg=#dddddd   guibg=#254cf7   gui=NONE
-highlight CursorLineNr      guifg=#ffffff   guibg=#254cf7   gui=bold
-highlight ModeMsg           guifg=#f29047   guibg=NONE      gui=NONE
-highlight MoreMsg           guifg=#727272   guibg=#fcef8c   gui=NONE
-highlight NonText           guifg=#e0e0e0   guibg=NONE      gui=NONE
-highlight Normal            guifg=#474757   guibg=#ffffff   gui=NONE
-highlight Pmenu             guifg=#008e46   guibg=#caf177   gui=NONE
-highlight PmenuSel          guifg=#caf177   guibg=#008e46   gui=NONE
-highlight PmenuSbar         guifg=#008e46   guibg=#caf177   gui=NONE
-highlight PmenuThumb        guifg=#caf177   guibg=#008e46   gui=NONE
-highlight Question          guifg=#0775c4   guibg=NONE      gui=NONE
-highlight Search            guifg=NONE      guibg=#fcef8c   gui=NONE
-highlight SignColumn        guifg=#dddddd   guibg=#254cf7   gui=NONE
-highlight SpecialKey        guifg=#ffff99   guibg=NONE      gui=NONE
-highlight StatusLine        guifg=#ffffff   guibg=#f72534   gui=NONE
-highlight StatusLineNC      guifg=#000000   guibg=#dddddd   gui=NONE
-highlight TabLine           guifg=#727272   guibg=#f3f3f3   gui=NONE
-highlight TabLineSel        guifg=#000000   guibg=#f3f3f3   gui=bold
-highlight TabLineFill       guifg=NONE      guibg=#919191   gui=NONE
-highlight Title             guifg=#f70f1f   guibg=NONE      gui=NONE
-highlight VertSplit         guifg=#dddddd   guibg=#254cf7   gui=NONE
-highlight Visual            guifg=NONE      guibg=#c2ff59   gui=NONE
-highlight WarningMsg        guifg=#464b4f   guibg=#ffea69   gui=NONE
-highlight WildMenu          guifg=#f72534   guibg=#fdcfd2   gui=NONE
+let white      = {'gui': '#ffffff', 'cterm': '15'}
+let darkred    = {'gui': '#830000', 'cterm': '124'} " inspired from Punkish gothic
+let lightgreen = {'gui': '#ecffc1', 'cterm': '157'} " bright logogreen
+let green      = {'gui': '#22dd22', 'cterm': '2'}
+let darkgreen  = {'gui': '#3d665e', 'cterm': '22'}  " kotori's hair
+let greeneye   = {'gui': '#108048', 'cterm': '29'}  " pretty mouth and ...
+let darkblue   = {'gui': '#000055', 'cterm': '17'}
+let lightgray  = {'gui': '#727272', 'cterm': '244'} " kuxtu...!
+let gray       = {'gui': '#333333', 'cterm': '235'}
+let darkgray   = {'gui': '#111111', 'cterm': '232'} " inspired from Punkish gothic
+let logored    = {'gui': '#ff0202', 'cterm': '9'}
+let logogreen  = {'gui': '#bfff16', 'cterm': '82'}
+let logoblue   = {'gui': '#46cfff', 'cterm': '45'}
+let logopink   = {'gui': '#ff92ff', 'cterm': '212'}
+let haruka     = {'gui': '#f70f1f', 'cterm': '160'}
+let chihaya    = {'gui': '#0775c4', 'cterm': '27'}
+let yukiho     = {'gui': '#aececb', 'cterm': '116'}
+let yayoi      = {'gui': '#f29047', 'cterm': '214'}
+let ritsuko    = {'gui': '#00a752', 'cterm': '28'}
+let azusa      = {'gui': '#7151a6', 'cterm': '91'}
+let iori       = {'gui': '#fa98bf', 'cterm': '206'}
+let makoto     = {'gui': '#515558', 'cterm': '240'}
+let amimami    = {'gui': '#fcd424', 'cterm': '226'}
+let miki       = {'gui': '#a1ca62', 'cterm': '76'}
+let hibiki     = {'gui': '#00b1bb', 'cterm': '39'}
+let takane     = {'gui': '#b51d66', 'cterm': '125'}
+let kotori     = {'gui': '#fffb77', 'cterm': '227'}
+let shacho     = {'gui': '#000000', 'cterm': '0'}
 
-"*** Syntax groups (:h group - name) ***"
-highlight Comment           guifg=#aececb   guibg=NONE      gui=NONE
-highlight Constant          guifg=#00b1dd   guibg=NONE      gui=NONE
-highlight Identifier        guifg=#f29047   guibg=NONE      gui=NONE
-highlight Function          guifg=#0775c4   guibg=NONE      gui=NONE
-highlight Statement         guifg=#f70f1f   guibg=NONE      gui=NONE
-highlight PreProc           guifg=#00a752   guibg=NONE      gui=NONE
-highlight Type              guifg=#7e51a6   guibg=NONE      gui=NONE
-highlight Special           guifg=#fa98bf   guibg=NONE      gui=NONE
-highlight Underlined        guifg=#464b4f   guibg=NONE      gui=underline
-highlight Ignore            guifg=#464b4f   guibg=#aececb   gui=NONE
-highlight Error             guifg=NONE      guibg=NONE      gui=undercurl   guisp=#ff0000
-highlight Todo              guifg=#eeeeee   guibg=#b51d66   gui=italic
-highlight String            guifg=#98c553   guibg=NONE      gui=NONE
+let none       = {'gui': 'NONE', 'cterm': 'NONE'}
+let bold       = {'gui': 'bold', 'cterm': 'bold'}
+let underline  = {'gui': 'underline', 'cterm': 'underline'}
+let undercurl  = {'gui': 'undercurl', 'cterm': 'underline'}
+
+let highlight_group = {}
+if &background ==# 'light'
+  let DiffAdd    = {'gui': '#cdffcd', 'cterm': '156'}
+  let DiffChange = {'gui': '#ffedcd', 'cterm': '228'}
+  let DiffDelete = {'gui': '#ffcdcd', 'cterm': '216'}
+  let DiffText   = {'gui': '#e6e6e6', 'cterm': '60'}
+
+  "*** highlight groups (:h highlight-groups) ***"
+
+  let highlight_group.StatusLine   = [white,     logopink,    none,      none]
+  let highlight_group.StatusLineNC = [lightgray, logopink,    none,      none]
+  let highlight_group.LineNr       = [white,     logopink,    none,      none]
+  let highlight_group.CursorLineNr = [logogreen, logopink,    bold,      none]
+  let highlight_group.VertSplit    = [logoblue,  white,       none,      none]
+  let highlight_group.Cursor       = [white,     shacho,      none,      none]
+  let highlight_group.CursorIM     = [white,     yayoi,       none,      none]
+  let highlight_group.Normal       = [makoto,    white,       none,      none]
+  let highlight_group.SignColumn   = [logoblue,  white,       none,      none]
+  let highlight_group.Folded       = [white,     logopink,    none,      none]
+  let highlight_group.FoldColumn   = [white,     logopink,    none,      none]
+  let highlight_group.CursorLine   = [none,      lightgreen,  none,      none]
+  let highlight_group.ErrorMsg     = [haruka,    none,        none,      none]
+  let highlight_group.ModeMsg      = [darkgreen, kotori,      none,      none]
+  let highlight_group.MoreMsg      = [darkgreen, kotori,      none,      none]
+  let highlight_group.Question     = [darkgreen, kotori,      none,      none]
+  let highlight_group.Conceal      = [white,     amimami,     none,      none]
+  let highlight_group.NonText      = [yukiho,    none,        none,      none]
+  let highlight_group.IncSearch    = [white,     hibiki,      none,      none]
+  let highlight_group.Search       = [none,      kotori,      none,      none]
+  let highlight_group.Pmenu        = [white,     logopink,    none,      none]
+  let highlight_group.PmenuSel     = [logored,   logopink,    none,      none]
+  let highlight_group.PmenuSbar    = [logopink,  logored,     none,      none]
+  let highlight_group.PmenuThumb   = [logored,   logopink,    none,      none]
+  let highlight_group.SpecialKey   = [iori,      none,        none,      none]
+  let highlight_group.TabLine      = [white,     logopink,    none,      none]
+  let highlight_group.TabLineSel   = [white,     logored,     none,      none]
+  let highlight_group.TabLineFill  = [none,      white,       none,      none]
+  let highlight_group.Title        = [logored,   none,        none,      none]
+  let highlight_group.Directory    = [azusa,     none,        none,      none]
+  let highlight_group.Visual       = [none,      kotori,      none,      none]
+  let highlight_group.WarningMsg   = [shacho,    kotori,      none,      none]
+  let highlight_group.WildMenu     = [logored,   logopink,    none,      none]
+
+  if exists('g:colorscheme_no_background')
+    let highlight_group.Normal[1]      = {'gui': white.gui, 'cterm': 'NONE'}
+    let highlight_group.TabLineFill[1] = {'gui': white.gui, 'cterm': 'NONE'}
+  endif
+
+  "*** Syntax groups (:h group-name) ***"
+  let highlight_group.Comment      = [yukiho,    none,        none,      none]
+  let highlight_group.Constant     = [ritsuko,   none,        none,      none]
+  let highlight_group.Identifier   = [chihaya,   none,        none,      none]
+  let highlight_group.Function     = [yayoi,     none,        none,      none]
+  let highlight_group.Statement    = [haruka,    none,        none,      none]
+  let highlight_group.PreProc      = [hibiki,    none,        none,      none]
+  let highlight_group.Type         = [azusa,     none,        none,      none]
+  let highlight_group.Special      = [iori,      none,        none,      none]
+  let highlight_group.Underlined   = [takane,    none,        underline, none]
+  let highlight_group.Ignore       = [yukiho,    none,        none,      none]
+  let highlight_group.Error        = [none,      none,        undercurl, haruka]
+  let highlight_group.Todo         = [white,     takane,      none,      none]
+  let highlight_group.String       = [miki,      none,        none,      none]
+
+  if exists('g:haruka_oreda_kekkon_shitekure')
+    let highlight_group.Normal[0]    = haruka
+    let highlight_group.Statement[0] = makoto
+  endif
+
+  "*** Settings for plugin ***"
+  let highlight_group.MatchParen   = [none,      amimami,     none,      none]
+else
+  let DiffAdd    = {'gui': '#004200', 'cterm': '22'}
+  let DiffChange = {'gui': '#424200', 'cterm': '58'}
+  let DiffDelete = {'gui': '#420000', 'cterm': '52'}
+  let DiffText   = {'gui': '#424242', 'cterm': '235'}
+
+  "*** highlight groups (:h highlight-groups) ***"
+  let highlight_group.StatusLine   = [white,     darkred,     none,      none]
+  let highlight_group.StatusLineNC = [lightgray, darkred,     none,      none]
+  let highlight_group.LineNr       = [white,     darkred,     none,      none]
+  let highlight_group.CursorLineNr = [greeneye,  darkred,     bold,      none]
+  let highlight_group.VertSplit    = [greeneye,  darkgray,    none,      none]
+  let highlight_group.Cursor       = [shacho,    white,       none,      none]
+  let highlight_group.CursorIM     = [white,     yayoi,       none,      none]
+  let highlight_group.Normal       = [yukiho,    darkgray,    none,      none]
+  let highlight_group.SignColumn   = [white,     darkgray,    none,      none]
+  let highlight_group.Folded       = [white,     darkred,     none,      none]
+  let highlight_group.FoldColumn   = [white,     darkred,     none,      none]
+  let highlight_group.CursorLine   = [none,      gray,        none,      none]
+  let highlight_group.ErrorMsg     = [haruka,    none,        none,      none]
+  let highlight_group.ModeMsg      = [kotori,    none,        none,      none]
+  let highlight_group.MoreMsg      = [kotori,    none,        none,      none]
+  let highlight_group.Question     = [kotori,    none,        none,      none]
+  let highlight_group.Conceal      = [amimami,   lightgray,   none,      none]
+  let highlight_group.NonText      = [makoto,    none,        none,      none]
+  let highlight_group.IncSearch    = [white,     hibiki,      none,      none]
+  let highlight_group.Search       = [none,      takane,      none,      none]
+  let highlight_group.Pmenu        = [lightgray, darkred,     none,      none]
+  let highlight_group.PmenuSel     = [white,     darkred,     none,      none]
+  let highlight_group.PmenuSbar    = [darkred,   white,       none,      none]
+  let highlight_group.PmenuThumb   = [white,     darkred,     none,      none]
+  let highlight_group.SpecialKey   = [iori,      none,        none,      none]
+  let highlight_group.TabLine      = [white,     gray,        none,      none]
+  let highlight_group.TabLineSel   = [white,     darkred,     none,      none]
+  let highlight_group.TabLineFill  = [none,      darkgray,    none,      none]
+  let highlight_group.Title        = [logored,   none,        none,      none]
+  let highlight_group.Directory    = [hibiki,    none,        none,      none]
+  let highlight_group.Visual       = [none,      darkblue,    none,      none]
+  let highlight_group.WarningMsg   = [kotori,    darkgray,    none,      none]
+  let highlight_group.WildMenu     = [green,     darkred,     none,      none]
+
+  if exists('g:colorscheme_no_background')
+    let highlight_group.Normal[1]      = {'gui': darkgray.gui, 'cterm': 'NONE'}
+    let highlight_group.TabLineFill[1] = {'gui': darkgray.gui, 'cterm': 'NONE'}
+  endif
+
+  "*** Syntax groups (:h group-name) ***"
+  let highlight_group.Comment      = [makoto,    none,        none,      none]
+  let highlight_group.Constant     = [ritsuko,   none,        none,      none]
+  let highlight_group.Identifier   = [chihaya,   none,        none,      none]
+  let highlight_group.Function     = [yayoi,     none,        none,      none]
+  let highlight_group.Statement    = [haruka,    none,        none,      none]
+  let highlight_group.PreProc      = [hibiki,    none,        none,      none]
+  let highlight_group.Type         = [amimami,   none,        none,      none]
+  let highlight_group.Special      = [iori,      none,        none,      none]
+  let highlight_group.Underlined   = [takane,    none,        underline, none]
+  let highlight_group.Ignore       = [makoto,    none,        none,      none]
+  let highlight_group.Error        = [none,      none,        undercurl, haruka]
+  let highlight_group.Todo         = [kotori,    none,        none,      none]
+  let highlight_group.String       = [miki,      none,        none,      none]
+
+  if exists('g:haruka_oreda_kekkon_shitekure')
+    let highlight_group.Normal[0]    = haruka
+    let highlight_group.Statement[0] = yukiho
+  endif
+
+  "*** Settings for plugin ***"
+  let highlight_group.MatchParen   = [none,      azusa,       none,      none]
+endif
+
+let highlight_group.DiffAdd    = [none, DiffAdd,    none, none]
+let highlight_group.DiffChange = [none, DiffChange, none, none]
+let highlight_group.DiffDelete = [none, DiffDelete, none, none]
+let highlight_group.DiffText   = [none, DiffText,   none, none]
+
+for [group, colors] in items(highlight_group)
+  execute printf('highlight %s guifg=%s guibg=%s gui=%s, guisp=%s ctermfg=%s ctermbg=%s cterm=%s',
+              \  group,
+              \  colors[0]["gui"],
+              \  colors[1]["gui"],
+              \  colors[2]["gui"],
+              \  colors[3]["gui"],
+              \  colors[0]["cterm"],
+              \  colors[1]["cterm"],
+              \  colors[2]["cterm"]
+              \ )
+endfor
+
+"*** links ***"
 highlight link Boolean Type
 
-"*** Settings for plugin ***"
-highlight MatchParen        guifg=NONE      guibg=#f4f43f   gui=NONE
-
-"*** Miscellaneous settings ***"
-
+unlet! white darkred lightgreen darkgreen greeneye lightgray gray darkgray logored logogreen logoblue logopink haruka chihaya yukiho yayoi ritsuko azusa iori makoto amimami miki hibiki takane kotori shacho none bold underline undercurl DiffAdd DiffChange DiffDelete DiffText
+unlet! highlight highlight_group group colors
