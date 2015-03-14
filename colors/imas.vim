@@ -5,10 +5,10 @@
 "------------------------------------------------------------
 
 highlight clear
-if exists("syntax_on")
+if exists('syntax_on')
     syntax reset
 endif
-let g:colors_name = "imas"
+let g:colors_name = 'imas'
 
 let white      = {'gui': '#ffffff', 'cterm': '15'}
 let darkred    = {'gui': '#830000', 'cterm': '124'} " inspired from Punkish gothic
@@ -104,7 +104,7 @@ if &background ==# 'light'
   let highlight_group.Underlined   = [takane,    none,        underline, none]
   let highlight_group.Ignore       = [yukiho,    none,        none,      none]
   let highlight_group.Error        = [none,      none,        undercurl, haruka]
-  let highlight_group.Todo         = [white,     takane,      none,      none]
+  let highlight_group.Todo         = [takane,    none,        none,      none]
   let highlight_group.String       = [miki,      none,        none,      none]
 
   if exists('g:haruka_oreda_kekkon_shitekure')
@@ -192,13 +192,13 @@ let highlight_group.DiffText   = [none, DiffText,   none, none]
 for [group, colors] in items(highlight_group)
   execute printf('highlight %s guifg=%s guibg=%s gui=%s, guisp=%s ctermfg=%s ctermbg=%s cterm=%s',
               \  group,
-              \  colors[0]["gui"],
-              \  colors[1]["gui"],
-              \  colors[2]["gui"],
-              \  colors[3]["gui"],
-              \  colors[0]["cterm"],
-              \  colors[1]["cterm"],
-              \  colors[2]["cterm"]
+              \  colors[0]['gui'],
+              \  colors[1]['gui'],
+              \  colors[2]['gui'],
+              \  colors[3]['gui'],
+              \  colors[0]['cterm'],
+              \  colors[1]['cterm'],
+              \  colors[2]['cterm']
               \ )
 endfor
 
