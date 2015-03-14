@@ -1,7 +1,7 @@
 vim-colorscheme-imas
 ====================
 
-Vimmerさん！colorschemですよ、colorscheme！
+Vimmerさん！colorschemeですよ、colorscheme！
 ## :set background=light
 ![background=light](http://art49.photozou.jp/pub/986/3080986/photo/219813925.v1426344002.png)
 
