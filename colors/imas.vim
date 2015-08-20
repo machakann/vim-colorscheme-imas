@@ -148,7 +148,7 @@ function! s:set() abort
     let highlight_group.TabLineSel   = [white,     darkred,     none,      none]
     let highlight_group.TabLineFill  = [none,      darkgray,    none,      none]
     " Search
-    let highlight_group.Search       = [none,      takane,      none,      none]
+    let highlight_group.Search       = [white,     takane,      none,      none]
     let highlight_group.IncSearch    = [white,     hibiki,      none,      none]
     " Message
     let highlight_group.ErrorMsg     = [haruka,    none,        none,      none]
