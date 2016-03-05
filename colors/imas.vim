@@ -78,9 +78,9 @@ function! s:set() abort
     let highlight_group.IncSearch    = [white,     hibiki,      none,      none]
     " Message
     let highlight_group.ErrorMsg     = [haruka,    none,        none,      none]
-    let highlight_group.ModeMsg      = [greenhair, kotori,      none,      none]
-    let highlight_group.MoreMsg      = [greenhair, kotori,      none,      none]
-    let highlight_group.Question     = [greenhair, kotori,      none,      none]
+    let highlight_group.ModeMsg      = [greenhair, none,        none,      none]
+    let highlight_group.MoreMsg      = [greenhair, none,        none,      none]
+    let highlight_group.Question     = [greenhair, none,        none,      none]
     let highlight_group.Title        = [logored,   none,        none,      none]
     let highlight_group.WarningMsg   = [shacho,    kotori,      none,      none]
     " Completion
