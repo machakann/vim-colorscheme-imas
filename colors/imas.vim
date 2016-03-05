@@ -70,9 +70,9 @@ function! s:set() abort
     let highlight_group.StatusLineNC = [lightgray, logopink,    none,      none]
     let highlight_group.WildMenu     = [white,     logored,     bold,      none]
     " Tabline
-    let highlight_group.TabLine      = [white,     logopink,    none,      none]
-    let highlight_group.TabLineSel   = [white,     logored,     none,      none]
-    let highlight_group.TabLineFill  = [none,      white,       none,      none]
+    let highlight_group.TabLine      = [lightgray, logopink,    none,      none]
+    let highlight_group.TabLineSel   = [shacho,    white,       bold,      none]
+    let highlight_group.TabLineFill  = [none,      logopink,    none,      none]
     " Search
     let highlight_group.Search       = [none,      kotori,      none,      none]
     let highlight_group.IncSearch    = [white,     hibiki,      none,      none]
@@ -144,9 +144,9 @@ function! s:set() abort
     let highlight_group.StatusLineNC = [lightgray, darkred,     none,      none]
     let highlight_group.WildMenu     = [greeneyes, darkred,     none,      none]
     " Tabline
-    let highlight_group.TabLine      = [white,     gray,        none,      none]
-    let highlight_group.TabLineSel   = [white,     darkred,     none,      none]
-    let highlight_group.TabLineFill  = [none,      darkgray,    none,      none]
+    let highlight_group.TabLine      = [lightgray, darkred,     none,      none]
+    let highlight_group.TabLineSel   = [white,     darkgray,    bold,      none]
+    let highlight_group.TabLineFill  = [none,      darkred,     none,      none]
     " Search
     let highlight_group.Search       = [white,     takane,      none,      none]
     let highlight_group.IncSearch    = [white,     hibiki,      none,      none]
