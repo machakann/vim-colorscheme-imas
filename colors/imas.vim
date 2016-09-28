@@ -84,10 +84,10 @@ function! s:set() abort
     let highlight_group.Title        = [logored,   none,        none,      none]
     let highlight_group.WarningMsg   = [shacho,    kotori,      none,      none]
     " Completion
-    let highlight_group.Pmenu        = [white,     logopink,    none,      none]
-    let highlight_group.PmenuSel     = [white,     logored,     none,      none]
-    let highlight_group.PmenuSbar    = [logored,   lightpink,   none,      none]
-    let highlight_group.PmenuThumb   = [lightpink, logored,     none,      none]
+    let highlight_group.Pmenu        = [white,     yukiho,      none,      none]
+    let highlight_group.PmenuSel     = [white,     makoto,      none,      none]
+    let highlight_group.PmenuSbar    = [makoto,    yukiho,      none,      none]
+    let highlight_group.PmenuThumb   = [yukiho,    makoto,      none,      none]
     " Miscellaneous
     let highlight_group.Directory    = [azusa,     none,        none,      none]
     let highlight_group.NonText      = [yukiho,    none,        none,      none]
