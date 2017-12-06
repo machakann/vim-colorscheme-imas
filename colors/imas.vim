@@ -67,8 +67,8 @@ function! s:set() abort
     let highlight_group.Folded       = [lightgray, lightpink,   none,      none]
     " Statusline
     let highlight_group.StatusLine   = [white,     logopink,    none,      none]
-    let highlight_group.StatusLineNC = [lightgray, logopink,    none,      none]
-    let highlight_group.WildMenu     = [white,     logored,     bold,      none]
+    let highlight_group.StatusLineNC = [lightpink, logopink,    none,      none]
+    let highlight_group.WildMenu     = [logored,   logopink,    none,      none]
     " Tabline
     let highlight_group.TabLine      = [lightgray, logopink,    none,      none]
     let highlight_group.TabLineSel   = [shacho,    white,       bold,      none]
