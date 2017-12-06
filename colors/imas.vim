@@ -12,7 +12,7 @@ let g:colors_name = 'imas'
 
 function! s:set() abort
   let white      = {'gui': '#ffffff', 'cterm': '15'}
-  let darkred    = {'gui': '#8b0000', 'cterm': '124'} " inspired from Punkish gothic
+  let darkred    = {'gui': '#8b0000', 'cterm': '124'} " inspired by Punkish gothic
   let indianred  = {'gui': '#cd5c5c', 'cterm': '167'}
   let lightgreen = {'gui': '#ecffc1', 'cterm': '157'} " bright logogreen
   let darkgreen  = {'gui': '#108048', 'cterm': '29'}
@@ -21,7 +21,7 @@ function! s:set() abort
   let darkblue   = {'gui': '#000055', 'cterm': '17'}
   let lightgray  = {'gui': '#727272', 'cterm': '244'} " kuxtu...!
   let gray       = {'gui': '#333333', 'cterm': '235'}
-  let darkgray   = {'gui': '#111111', 'cterm': '232'} " inspired from Punkish gothic
+  let darkgray   = {'gui': '#111111', 'cterm': '232'} " inspired by Punkish gothic
   let logored    = {'gui': '#ff0202', 'cterm': '9'}
   let logogreen  = {'gui': '#bfff16', 'cterm': '82'}
   let logoblue   = {'gui': '#46cfff', 'cterm': '45'}
@@ -84,10 +84,10 @@ function! s:set() abort
     let highlight_group.Title        = [logored,   none,        none,      none]
     let highlight_group.WarningMsg   = [shacho,    kotori,      none,      none]
     " Completion
-    let highlight_group.Pmenu        = [white,     yukiho,      none,      none]
-    let highlight_group.PmenuSel     = [white,     makoto,      none,      none]
-    let highlight_group.PmenuSbar    = [makoto,    yukiho,      none,      none]
-    let highlight_group.PmenuThumb   = [yukiho,    makoto,      none,      none]
+    let highlight_group.Pmenu        = [white,     logoblue,    none,      none]
+    let highlight_group.PmenuSel     = [ritsuko,   logogreen,   none,      none]
+    let highlight_group.PmenuSbar    = [chihaya,   logoblue,    none,      none]
+    let highlight_group.PmenuThumb   = [logoblue,  chihaya,     none,      none]
     " Miscellaneous
     let highlight_group.Directory    = [azusa,     none,        none,      none]
     let highlight_group.NonText      = [yukiho,    none,        none,      none]
@@ -160,8 +160,8 @@ function! s:set() abort
     " Completion
     let highlight_group.Pmenu        = [white,     darkred,     none,      none]
     let highlight_group.PmenuSel     = [greeneyes, darkred,     none,      none]
-    let highlight_group.PmenuSbar    = [darkred,   white,       none,      none]
-    let highlight_group.PmenuThumb   = [white,     darkred,     none,      none]
+    let highlight_group.PmenuSbar    = [lightgray, white,       none,      none]
+    let highlight_group.PmenuThumb   = [white,     lightgray,   none,      none]
     " Miscellaneous
     let highlight_group.Directory    = [hibiki,    none,        none,      none]
     let highlight_group.NonText      = [makoto,    none,        none,      none]
