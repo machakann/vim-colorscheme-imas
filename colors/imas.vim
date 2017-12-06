@@ -138,7 +138,7 @@ function! s:set() abort
     let highlight_group.SignColumn   = [white,     darkgray,    none,      none]
     let highlight_group.VertSplit    = [darkgreen, darkgray,    none,      none]
     " Fold
-    let highlight_group.Folded       = [darkgray,  indianred,   none,      none]
+    let highlight_group.Folded       = [lightgray, gray,   none,      none]
     " Statusline
     let highlight_group.StatusLine   = [white,     darkred,     none,      none]
     let highlight_group.StatusLineNC = [lightgray, darkred,     none,      none]
