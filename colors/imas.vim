@@ -23,7 +23,7 @@ function! s:set() abort
   let gray       = {'gui': '#333333', 'cterm': '235'}
   let darkgray   = {'gui': '#111111', 'cterm': '232'} " inspired by Punkish gothic
   let logored    = {'gui': '#ff0202', 'cterm': '9'}
-  let logogreen  = {'gui': '#bfff16', 'cterm': '82'}
+  let logogreen  = {'gui': '#c4ff29', 'cterm': '82'}
   let logoblue   = {'gui': '#46cfff', 'cterm': '45'}
   let logopink   = {'gui': '#ff92ff', 'cterm': '212'}
   let lightpink  = {'gui': '#ffd9ff', 'cterm': '219'}
