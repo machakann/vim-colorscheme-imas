@@ -70,8 +70,8 @@ function! s:set() abort
     let highlight_group.StatusLineNC = [lightpink, logopink,    none,      none]
     let highlight_group.WildMenu     = [logored,   logopink,    none,      none]
     " Tabline
-    let highlight_group.TabLine      = [lightgray, logopink,    none,      none]
-    let highlight_group.TabLineSel   = [shacho,    white,       bold,      none]
+    let highlight_group.TabLine      = [lightpink, logopink,    none,      none]
+    let highlight_group.TabLineSel   = [logogreen, logopink,    bold,      none]
     let highlight_group.TabLineFill  = [none,      logopink,    none,      none]
     " Search
     let highlight_group.Search       = [none,      kotori,      none,      none]
