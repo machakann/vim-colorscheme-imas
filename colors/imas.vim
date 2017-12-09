@@ -17,7 +17,6 @@ function! s:set() abort
   let lightgreen = {'gui': '#ecffc1', 'cterm': '157'} " bright logogreen
   let darkgreen  = {'gui': '#108048', 'cterm': '29'}
   let greeneyes  = {'gui': '#22dd22', 'cterm': '2'}   " pretty mouth and ...
-  let greenhair  = {'gui': '#3d665e', 'cterm': '22'}  " kotori's hair
   let darkblue   = {'gui': '#000055', 'cterm': '17'}
   let lightgray  = {'gui': '#727272', 'cterm': '244'} " kuxtu...!
   let gray       = {'gui': '#333333', 'cterm': '235'}
@@ -78,9 +77,9 @@ function! s:set() abort
     let highlight_group.IncSearch    = [white,     hibiki,      none,      none]
     " Message
     let highlight_group.ErrorMsg     = [haruka,    none,        none,      none]
-    let highlight_group.ModeMsg      = [greenhair, none,        none,      none]
-    let highlight_group.MoreMsg      = [greenhair, none,        none,      none]
-    let highlight_group.Question     = [greenhair, none,        none,      none]
+    let highlight_group.ModeMsg      = [logoblue,  none,        bold,      none]
+    let highlight_group.MoreMsg      = [logoblue,  none,        bold,      none]
+    let highlight_group.Question     = [logoblue,  none,        bold,      none]
     let highlight_group.Title        = [logored,   none,        none,      none]
     let highlight_group.WarningMsg   = [shacho,    kotori,      none,      none]
     " Completion
