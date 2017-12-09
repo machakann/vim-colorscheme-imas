@@ -58,9 +58,9 @@ function! s:set() abort
     let highlight_group.CursorIM     = [white,     yayoi,       none,      none]
     let highlight_group.CursorLine   = [none,      lightgreen,  none,      none]
     " Sidebar
-    let highlight_group.LineNr       = [white,     logopink,    none,      none]
-    let highlight_group.CursorLineNr = [logogreen, logopink,    bold,      none]
-    let highlight_group.FoldColumn   = [white,     logopink,    none,      none]
+    let highlight_group.LineNr       = [logoblue,  white,       none,      none]
+    let highlight_group.CursorLineNr = [logoblue,  lightgreen,  bold,      none]
+    let highlight_group.FoldColumn   = [lightgray, lightpink,   none,      none]
     let highlight_group.SignColumn   = [logoblue,  white,       none,      none]
     let highlight_group.VertSplit    = [logoblue,  white,       none,      none]
     " Fold
