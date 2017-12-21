@@ -20,7 +20,8 @@ function! s:set() abort
   let darkblue   = {'gui': '#000055', 'cterm': '17'}
   let lightgray  = {'gui': '#727272', 'cterm': '244'} " kuxtu...!
   let gray       = {'gui': '#333333', 'cterm': '235'}
-  let darkgray   = {'gui': '#111111', 'cterm': '232'} " inspired by Punkish gothic
+  let darkgray   = {'gui': '#222222', 'cterm': '234'}
+  let black      = {'gui': '#111111', 'cterm': '232'} " inspired by Punkish gothic
   let logored    = {'gui': '#ff0202', 'cterm': '9'}
   let logogreen  = {'gui': '#cdff49', 'cterm': '82'}
   let logoblue   = {'gui': '#46cfff', 'cterm': '45'}
@@ -124,27 +125,27 @@ function! s:set() abort
   else
     "*** highlight groups (:h highlight-groups) ***"
     " fundamental
-    let highlight_group.Normal       = [yukiho,    darkgray,    none,      none]
+    let highlight_group.Normal       = [yukiho,    black,       none,      none]
     let highlight_group.Visual       = [none,      darkblue,    none,      none]
     " Cursor
     let highlight_group.Cursor       = [shacho,    white,       none,      none]
     let highlight_group.CursorIM     = [white,     yayoi,       none,      none]
-    let highlight_group.CursorLine   = [none,      gray,        none,      none]
+    let highlight_group.CursorLine   = [none,      darkgray,    none,      none]
     " Sidebar
-    let highlight_group.LineNr       = [white,     darkred,     none,      none]
-    let highlight_group.CursorLineNr = [greeneyes, darkred,     none,      none]
-    let highlight_group.FoldColumn   = [white,     darkred,     none,      none]
-    let highlight_group.SignColumn   = [white,     darkgray,    none,      none]
-    let highlight_group.VertSplit    = [darkgreen, darkgray,    none,      none]
+    let highlight_group.LineNr       = [darkred,   black,       none,      none]
+    let highlight_group.CursorLineNr = [darkgreen, darkgray,    none,      none]
+    let highlight_group.FoldColumn   = [lightgray, gray,        none,      none]
+    let highlight_group.SignColumn   = [white,     black,       none,      none]
+    let highlight_group.VertSplit    = [darkgreen, black,       none,      none]
     " Fold
-    let highlight_group.Folded       = [lightgray, gray,   none,      none]
+    let highlight_group.Folded       = [lightgray, gray,        none,      none]
     " Statusline
     let highlight_group.StatusLine   = [white,     darkred,     none,      none]
     let highlight_group.StatusLineNC = [lightgray, darkred,     none,      none]
     let highlight_group.WildMenu     = [greeneyes, darkred,     none,      none]
     " Tabline
     let highlight_group.TabLine      = [lightgray, darkred,     none,      none]
-    let highlight_group.TabLineSel   = [white,     darkgray,    bold,      none]
+    let highlight_group.TabLineSel   = [white,     black,       bold,      none]
     let highlight_group.TabLineFill  = [none,      darkred,     none,      none]
     " Search
     let highlight_group.Search       = [white,     takane,      none,      none]
@@ -155,7 +156,7 @@ function! s:set() abort
     let highlight_group.MoreMsg      = [kotori,    none,        none,      none]
     let highlight_group.Question     = [kotori,    none,        none,      none]
     let highlight_group.Title        = [logored,   none,        none,      none]
-    let highlight_group.WarningMsg   = [kotori,    darkgray,    none,      none]
+    let highlight_group.WarningMsg   = [kotori,    black,       none,      none]
     " Completion
     let highlight_group.Pmenu        = [white,     darkred,     none,      none]
     let highlight_group.PmenuSel     = [greeneyes, darkred,     none,      none]
@@ -190,7 +191,7 @@ function! s:set() abort
     "*** Settings for plugin ***"
     let highlight_group.MatchParen   = [none,      azusa,       none,      none]
 
-    let bg_none    = {'gui': darkgray.gui, 'cterm': 'NONE'}
+    let bg_none    = {'gui': black.gui,    'cterm': 'NONE'}
     let DiffAdd    = {'gui': '#004200',    'cterm': '22'}
     let DiffChange = {'gui': '#424200',    'cterm': '58'}
     let DiffDelete = {'gui': '#420000',    'cterm': '52'}
