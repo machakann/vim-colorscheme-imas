@@ -122,6 +122,10 @@ function! s:set() abort
     let DiffChange = {'gui': '#ffedcd', 'cterm': '228'}
     let DiffDelete = {'gui': '#ffcdcd', 'cterm': '216'}
     let DiffText   = {'gui': '#e6e6e6', 'cterm': '60'}
+    let highlight_group.DiffAdd    = [none, DiffAdd,    none, none]
+    let highlight_group.DiffChange = [none, DiffChange, none, none]
+    let highlight_group.DiffDelete = [none, DiffDelete, none, none]
+    let highlight_group.DiffText   = [none, DiffText,   none, none]
   else
     "*** highlight groups (:h highlight-groups) ***"
     " fundamental
@@ -191,17 +195,16 @@ function! s:set() abort
     "*** Settings for plugin ***"
     let highlight_group.MatchParen   = [none,      azusa,       none,      none]
 
-    let bg_none    = {'gui': black.gui,    'cterm': 'NONE'}
-    let DiffAdd    = {'gui': '#004200',    'cterm': '22'}
-    let DiffChange = {'gui': '#424200',    'cterm': '58'}
-    let DiffDelete = {'gui': '#420000',    'cterm': '52'}
-    let DiffText   = {'gui': '#424242',    'cterm': '235'}
+    let bg_none    = {'gui': black.gui, 'cterm': 'NONE'}
+    let DiffAdd    = {'gui': '#aaffaa', 'cterm': '22'}
+    let DiffChange = {'gui': '#ffffaa', 'cterm': '58'}
+    let DiffDelete = {'gui': '#ffaaaa', 'cterm': '52'}
+    let DiffText   = {'gui': '#ffffaa', 'cterm': '235'}
+    let highlight_group.DiffAdd    = [DiffAdd,    none, none, none]
+    let highlight_group.DiffChange = [DiffChange, none, none, none]
+    let highlight_group.DiffDelete = [DiffDelete, none, none, none]
+    let highlight_group.DiffText   = [DiffText,   none, none, none]
   endif
-
-  let highlight_group.DiffAdd    = [none, DiffAdd,    none, none]
-  let highlight_group.DiffChange = [none, DiffChange, none, none]
-  let highlight_group.DiffDelete = [none, DiffDelete, none, none]
-  let highlight_group.DiffText   = [none, DiffText,   none, none]
 
   if exists('g:colorscheme_no_background')
     let highlight_group.Normal[1]      = bg_none
