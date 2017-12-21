@@ -88,7 +88,7 @@ function! s:set() abort
     let highlight_group.PmenuSbar    = [chihaya,   logoblue,    none,      none]
     let highlight_group.PmenuThumb   = [logoblue,  chihaya,     none,      none]
     " Miscellaneous
-    let highlight_group.Directory    = [azusa,     none,        none,      none]
+    let highlight_group.Directory    = [azusa,     none,        bold,      none]
     let highlight_group.NonText      = [yukiho,    none,        none,      none]
     let highlight_group.SpecialKey   = [iori,      none,        none,      none]
     let highlight_group.Conceal      = [white,     amimami,     none,      none]
